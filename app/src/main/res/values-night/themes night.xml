@@ -27,21 +27,6 @@
         <item name="colorOutline">@color/md_theme_dark_outline</item>
         <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
-        <item name="colorCustomColor1">#ffafd6</item>
-        <item name="colorOnCustomColor1">#5b1140</item>
-        <item name="colorCustomColor1Container">#772958</item>
-        <item name="colorOnCustomColor1Container">#ffd8e8</item>
-        <item name="harmonizeCustomColor1">false</item>
-        <item name="colorCustomColor2">#79da9e</item>
-        <item name="colorOnCustomColor2">#00391e</item>
-        <item name="colorCustomColor2Container">#00522e</item>
-        <item name="colorOnCustomColor2Container">#95f7b9</item>
-        <item name="harmonizeCustomColor2">false</item>
-        <item name="colorCustomColor3">#ffb692</item>
-        <item name="colorOnCustomColor3">#552000</item>
-        <item name="colorCustomColor3Container">#793100</item>
-        <item name="colorOnCustomColor3Container">#ffdbcb</item>
-        <item name="harmonizeCustomColor3">false</item>
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
     </style>
 </resources>

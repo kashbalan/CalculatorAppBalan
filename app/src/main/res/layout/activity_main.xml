@@ -15,7 +15,7 @@
         android:background="@color/md_theme_dark_inverseSurface"
         android:backgroundTint="@color/md_theme_dark_inverseSurface"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:text="Enter first number here"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         android:layout_marginBottom="579dp"
         android:background="@color/md_theme_dark_onSecondaryContainer"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:text="Enter second number here"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +46,7 @@
         android:layout_marginTop="616dp"
         android:background="@color/md_theme_dark_secondary"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:text="Answer  here"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,99 +56,161 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/number1id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="md_theme_dark_onTertiary" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="54dp"
-        android:layout_height="57dp"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="188dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="384dp"
+        android:layout_marginBottom="514dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/number2id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="200dp" />
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="514dp"
+        android:text="2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <Button
+        android:id="@+id/number3id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="511dp"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <Button
+        android:id="@+id/plusid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="514dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minusid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <Button
+        android:id="@+id/number4id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginEnd="384dp"
+        android:layout_marginBottom="457dp"
+        android:text="4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/number5id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Button
+        android:id="@+id/number6id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="199dp" />
+        tools:layout_editor_absoluteY="247dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <Button
+        android:id="@+id/number7id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="288dp" />
+        android:text="7"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="303dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <Button
+        android:id="@+id/number8id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="285dp" />
+        android:text="8"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="303dp" />
 
-    <ImageView
-        android:id="@+id/imageView6"
+    <Button
+        android:id="@+id/number9id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="284dp" />
+        android:text="9"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="303dp" />
 
-    <ImageView
-        android:id="@+id/imageView7"
+    <Button
+        android:id="@+id/multid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="372dp" />
+        android:text="X"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="312dp" />
 
-    <ImageView
-        android:id="@+id/imageView8"
+    <Button
+        android:id="@+id/divideid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="375dp" />
+        android:text="%"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="368dp" />
 
-    <ImageView
-        android:id="@+id/imageView9"
+    <Button
+        android:id="@+id/enterid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="366dp" />
+        android:text="="
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="368dp" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/circle"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="462dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
