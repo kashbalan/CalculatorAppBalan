@@ -29,4 +29,22 @@
         <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
     </style>
+    <style name="NumberButtons" parent= "Widget.Material3.Button">
+        <item name = "android:padding">@dimen/padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginSides</item>
+        <item name = "android:layout_marginEnd">@dimen/marginSides</item>
+        <item name = "backgroundTint">#9CE9C1</item>
+    </style>
+    <style name="SymbolButtons" parent= "Widget.Material3.Button">
+        <item name = "android:padding">@dimen/padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:layout_marginTop">@dimen/marginTop</item>
+        <item name="android:layout_marginStart">@dimen/marginSides</item>
+        <item name = "android:layout_marginEnd">@dimen/marginSides</item>
+        <item name = "backgroundTint">#FFA38C</item>
+    </style>
 </resources>

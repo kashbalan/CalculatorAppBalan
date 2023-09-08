@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <dimen name = "padding">10dp</dimen>
+   <dimen name = "marginTop">5sp</dimen>
+    <dimen name="marginSides">5sp</dimen>
+    <dimen name= "textColor">#000000</dimen>
+    <dimen name= "textFont"></dimen>
+</resources>
+
