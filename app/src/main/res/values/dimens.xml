@@ -4,6 +4,5 @@
    <dimen name = "marginTop">5sp</dimen>
     <dimen name="marginSides">5sp</dimen>
     <dimen name= "textColor">#000000</dimen>
-    <dimen name= "textFont"></dimen>
 </resources>
 
