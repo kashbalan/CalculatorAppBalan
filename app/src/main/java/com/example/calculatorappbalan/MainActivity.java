@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String nameToShow = intent.getStringExtra("NAME");
 
-        TextView textView = findViewById(R.id.userName);
+        TextView textView = findViewById(R.id.Answerid);
         textView.setText(nameToShow);
 
     }
@@ -27,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondCalcScreen.class);
         intent.putExtra("NAME", name);
         startActivity(intent);
+    }
+
+    public void numSelected(View v){
+        if(v.getId() == R.id.number1id || v.getId() == R.id.number2id || v.getId() == R.id.number3id || v.getId() == R.id.number4id || v.getId() == R.id.number5id || v.getId() == R.id.number6id || v.getId() == R.id.number7id || v.getId() == R.id.number8id || v.getId() == R.id.number9id){
+            switchScreens(v);
+        }
+
     }
 
 }
