@@ -1,4 +1,3 @@
-
 <resources>
     <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/md_theme_light_primary</item>
@@ -34,7 +33,7 @@
         <item name = "android:layout_marginTop">@dimen/marginTop</item>
         <item name="android:layout_marginStart">@dimen/marginSides</item>
         <item name = "android:layout_marginEnd">@dimen/marginSides</item>
-        <item name = "android:textColor">@dimen/textColor</item>
+        <item name = "android:textColor">@color/textColor</item>
         <item name = "backgroundTint">#9CE9C1</item>
     </style>
     <style name="SymbolButtons" parent= "Widget.Material3.Button">
@@ -45,6 +44,6 @@
         <item name="android:layout_marginStart">@dimen/marginSides</item>
         <item name = "android:layout_marginEnd">@dimen/marginSides</item>
         <item name = "backgroundTint">#FFA38C</item>
-        <item name = "android:textColor">@dimen/textColor</item>
+        <item name = "android:textColor">@color/textColor</item>
     </style>
 </resources>
