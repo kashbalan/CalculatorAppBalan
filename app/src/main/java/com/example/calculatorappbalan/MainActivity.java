@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,10 +23,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void switchScreens(View view) {
-        EditText editText = findViewById(R.id.enterfirstnumberid);
-        String name = editText.getText().toString();
-        Intent intent = new Intent(this, SecondCalcScreen.class);
-        intent.putExtra("NAME", name);
+        EditText firstNum = findViewById(R.id.enterfirstnumberid);
+        String name = firstNum.getText().toString();
+
+
+
+        EditText secondNum = findViewById(R.id.entersecondnumid);
+        String age = secondNum.getText().toString();
+
+
+
+        //log statments allow us to print to the console for debugging
+        Log.i("kash", name + " " + age);
+        String fullText = name + "\n " + age + "\n" + hobby;
+        //create intent and tell where to go
+        //fill the intent (optional)
+        //call startActivity to launch the intent
+        Intent intent = new Intent(this, ShowInfoActivity.class);
+        intent.putExtra("FULLTEXT", fullText);
         startActivity(intent);
     }
 
