@@ -3,6 +3,7 @@
     <dimen name = "padding">10dp</dimen>
    <dimen name = "marginTop">5dp</dimen>
     <dimen name="marginSides">5dp</dimen>
+    <dimen name="fontSize">20sp</dimen>
 
 </resources>
 
