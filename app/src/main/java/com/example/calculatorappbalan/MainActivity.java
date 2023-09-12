@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculate(View v){
+        String name = "";
+        int fullText = 0;
         if(v.getId() == R.id.plusid){
 
         }
@@ -37,49 +39,52 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonSelected(View v) {
-            String name = "";
-            int fullText = 0;
-            if (v.getId() == R.id.number1id) {
-                name += 1;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
 
-            } else if (v.getId() == R.id.number2id) {
-                name += 2;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number3id) {
-                name += 3;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number4id) {
-                name += 4;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number5id) {
-                name += 5;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number6id) {
-                name += 6;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number7id) {
-                name += 7;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number8id) {
-                name += 8;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            } else if (v.getId() == R.id.number9id) {
-                name += 9;
-                int num1 = Integer.parseInt(name.toString());
-                fullText += num1;
-            }
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("FULLTEXT", fullText);
-            startActivity(intent);
+        String name = "";
+        int fullText = 0;
+        if (v.getId() == R.id.number1id) {
+            name += 1;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+
+        } else if (v.getId() == R.id.number2id) {
+            name += 2;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number3id) {
+            name += 3;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number4id) {
+            name += 4;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number5id) {
+            name += 5;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number6id) {
+            name += 6;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number7id) {
+            name += 7;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number8id) {
+            name += 8;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        } else if (v.getId() == R.id.number9id) {
+            name += 9;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("FULLTEXT", fullText);
+        startActivity(intent);
     }
+
     }
+
 

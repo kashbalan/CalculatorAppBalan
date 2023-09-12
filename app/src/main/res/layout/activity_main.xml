@@ -14,9 +14,22 @@
         android:background="@color/md_theme_dark_inverseSurface"
         android:backgroundTint="@color/md_theme_dark_inverseSurface"
         android:ems="10"
+        android:onClick="buttonSelected"
         android:hint="Enter first number here"
         android:inputType="number"
         android:textColorHint="@color/md_theme_light_scrim"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-2dp" />
+    <EditText
+        android:id="@+id/secondNumberId"
+        android:layout_width="414dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/md_theme_dark_secondaryContainer"
+        android:hint="Enter second number here"
+        android:inputType="number"
+        android:textColorHint="@color/textColor"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-2dp" />
@@ -308,18 +321,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/secondNumberId"
-        android:layout_width="414dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="76dp"
-        android:background="@color/md_theme_dark_secondaryContainer"
-        android:hint="Enter second number here"
-        android:inputType="number"
-        android:textColorHint="@color/textColor"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-2dp" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
