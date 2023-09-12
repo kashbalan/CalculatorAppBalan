@@ -16,39 +16,74 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Intent intent = getIntent();
-        String nameToShow = intent.getStringExtra("NAME");
+        int recieved = intent.getIntExtra("FULLTEXT",0);
+        Log.i("kash", "Recieved " + recieved);
+        TextView infoTV = findViewById(R.id.enterfirstnumberid);
+        infoTV.setText("" +recieved);
 
-        TextView textView = findViewById(R.id.Answerid);
-        textView.setText(nameToShow);
 
     }
-    public void switchScreens(View view) {
-        EditText firstNum = findViewById(R.id.enterfirstnumberid);
-        String name = firstNum.getText().toString();
 
+    public void calculate(View v){
 
+    }
 
-        EditText secondNum = findViewById(R.id.entersecondnumid);
-        String age = secondNum.getText().toString();
+    public void buttonSelected(View v){
+        String name = "";
+        int fullText = 0;
+        if(v.getId() == R.id.number1id) {
+            name += 1;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
 
-
-
-        //log statments allow us to print to the console for debugging
-        Log.i("kash", name + " " + age);
-        String fullText = name + "\n " + age + "\n" + hobby;
-        //create intent and tell where to go
-        //fill the intent (optional)
-        //call startActivity to launch the intent
-        Intent intent = new Intent(this, ShowInfoActivity.class);
+        }
+        else if(v.getId() == R.id.number2id) {
+            name += 2;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number3id) {
+            name += 3;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number4id) {
+            name += 4;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number5id) {
+            name += 5;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number6id) {
+            name += 6;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number7id) {
+            name += 7;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number8id) {
+            name += 8;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        else if(v.getId() == R.id.number9id) {
+            name += 9;
+            int num1 = Integer.parseInt(name.toString());
+            fullText += num1;
+        }
+        Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("FULLTEXT", fullText);
         startActivity(intent);
-    }
 
-    public void numSelected(View v){
-        if(v.getId() == R.id.number1id || v.getId() == R.id.number2id || v.getId() == R.id.number3id || v.getId() == R.id.number4id || v.getId() == R.id.number5id || v.getId() == R.id.number6id || v.getId() == R.id.number7id || v.getId() == R.id.number8id || v.getId() == R.id.number9id){
-            switchScreens(v);
+
+
         }
 
     }
 
-}
