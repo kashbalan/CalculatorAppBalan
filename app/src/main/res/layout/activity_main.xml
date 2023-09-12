@@ -304,5 +304,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="196dp"
+        android:layout_height="42dp"
+        android:text="Click here then select first num"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="16dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
