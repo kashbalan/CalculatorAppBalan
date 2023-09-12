@@ -14,12 +14,30 @@
         android:background="@color/md_theme_dark_inverseSurface"
         android:backgroundTint="@color/md_theme_dark_inverseSurface"
         android:ems="10"
-        android:hint="Enter equation here"
+        android:hint="Enter first number here"
         android:inputType="number"
         android:textColorHint="@color/md_theme_light_scrim"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-2dp" />
+
+    <Button
+        android:id="@+id/number1id2"
+        style="@style/NumberButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="485dp"
+        android:background="@color/md_theme_dark_onTertiary"
+        android:onClick="buttonSelected"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Answerid"
@@ -282,7 +300,7 @@
         android:layout_marginEnd="104dp"
         android:layout_marginBottom="274dp"
         android:background="@color/md_theme_dark_tertiary"
-        android:onClick="numSelected"
+        android:onClick="calculate"
         android:text="="
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -290,13 +308,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/secondNumberId"
         android:layout_width="414dp"
         android:layout_height="70dp"
         android:layout_marginTop="76dp"
         android:background="@color/md_theme_dark_secondaryContainer"
         android:hint="Enter second number here"
+        android:inputType="number"
         android:textColorHint="@color/textColor"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent"
