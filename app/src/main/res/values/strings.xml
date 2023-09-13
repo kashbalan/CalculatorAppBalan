@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Enter numbers and choose operation</string>
-    <string name= "first_num">Enter first number here</string>
-    <string name= "second_num">Enter second number here</string>
+    <string name="app_name">Enter an equation</string>
+    <string name= "equ_name">Equation here</string>
     <string name= "answer_num">Answer here</string>
 </resources>
