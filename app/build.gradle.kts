@@ -34,6 +34,7 @@ dependencies {
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     //https://www.youtube.com/watch?v=kqmSUwRZ6kg
+    //the following code imports the ScriptEngine class
     implementation("io.apisense:rhino-android:1.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

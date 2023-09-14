@@ -19,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void calculate(View v) throws ScriptException {
+        ////https://www.youtube.com/watch?v=kqmSUwRZ6kg
+        // the following lines of code takes the String in the equation then calls
+        // the ScriptEngine class and instantiates a new ScriptEngingManager in order to eval
+        //the String and converts it a mathematical equation to be solved and then converts the answer
+        // into a double to be put into the Double toutal which is then converted back into a String
+        // to be put into the AnswerId to display the answer
+
         Double total = null;
         TextView infoTV = (TextView)findViewById(R.id.equationid);
         String info = infoTV.getText().toString();
@@ -28,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         TextView infoTVAns = (TextView)findViewById(R.id.Answerid);
         infoTVAns.setText(result);
     }
-
     public void buttonSelected(View v) {
             String num1 = "1";
             String num2 = "2";
